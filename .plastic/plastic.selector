@@ -1,4 +1,0 @@
-repository "PremisLudi/PremisLudi@6872730906936@cloud"
-  path "/"
-    br "/main"
-    co "/main"
