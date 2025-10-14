@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eeb6f7b7f7865db4aa5ecdd1bc36e5e4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fish: {fileID: 3705646658994576629, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+  - scoreText: {fileID: 7662262805041047607, guid: e017b93ee95f74d4f8e1f6f4aa10387f, type: 3}
+  - floatingPrefab: {fileID: -855258284515826261, guid: 26bf02ed238dcf6469716ba51f5c29d1, type: 3}
+  - floatingRoot: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
