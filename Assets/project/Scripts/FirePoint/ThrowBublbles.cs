@@ -1,82 +1,73 @@
-﻿using System.Collections;
-using System.Collections.Generic; 
+﻿using System.Collections.Generic;   // List<>
 using UnityEngine;
+using TMPro;                        // TMP_Text
 
 public class ThrowBubbles : MonoBehaviour
 {
-
-
     [Header("Configuración general")]
     public GameObject bubblePrefab;
     public WordPool wordPool;
     public WordCategory currentCategory;
     public float fireDelay = 2f;
 
-    // 🔸 Lista compartida por TODOS los FirePoints
+    // Lista compartida por TODOS los FirePoints
     public static List<WordData2> sharedAvailableWords;
+
+    // (Opcional pero útil si tienes Enter Play Mode sin Reload Domain)
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() => sharedAvailableWords = null;
 
     void Start()
     {
-        // Solo el primer FirePoint inicializa la lista compartida
+        if (wordPool == null) { Debug.LogError("WordPool no asignado", this); return; }
+        if (bubblePrefab == null) { Debug.LogError("BubblePrefab no asignado", this); return; }
+
+        // Solo el primero inicializa la lista compartida
         if (sharedAvailableWords == null || sharedAvailableWords.Count == 0)
         {
             sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
             Debug.Log($"🔁 Palabras cargadas ({sharedAvailableWords.Count}) para categoría {currentCategory}");
         }
 
-        // Lanza burbujas periódicamente (o puedes hacerlo por evento)
         InvokeRepeating(nameof(SpawnBubble), 1f, fireDelay);
     }
 
     void SpawnBubble()
     {
-        if (bubblePrefab == null || sharedAvailableWords == null || sharedAvailableWords.Count == 0)
+        if (sharedAvailableWords == null || sharedAvailableWords.Count == 0)
         {
-            Debug.Log("⚠️ Sin palabras disponibles o prefab vacío.");
+            Debug.Log("⚠️ Sin palabras disponibles.");
             return;
         }
 
-        // Elegir una palabra al azar de la lista compartida
+        // Elegir y retirar una palabra para no repetir
         int randomIndex = Random.Range(0, sharedAvailableWords.Count);
         WordData2 selectedWord = sharedAvailableWords[randomIndex];
-
-        // Eliminarla para que no se repita
         sharedAvailableWords.RemoveAt(randomIndex);
 
-        // Instanciar la burbuja en este punto
+        // Instanciar la burbuja
         GameObject bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
-        bubble.GetComponent<CollisionDetection>().SetWord(selectedWord);
 
-        Debug.Log($"💬 FirePoint '{name}' lanzó '{selectedWord.Text}' ({selectedWord.Category})");
+        var cd = bubble.GetComponent<CollisionDetection>();
+        if (cd != null) cd.SetWord(selectedWord);
+        else Debug.LogError("El prefab de burbuja no tiene CollisionDetection.", bubble);
 
-        // Si se acaban las palabras, opcionalmente reiniciamos
+        // Mostrar la palabra justo al instanciar
+        TMP_Text label = bubble.GetComponentInChildren<TMP_Text>();
+        if (label != null)
+        {
+            label.text = selectedWord.Text;
+            // opcional: color por correcta/incorrecta
+            // label.color = selectedWord.IsCorrect ? Color.green : Color.red;
+        }
+
+        Debug.Log($"💬 {name} lanzó '{selectedWord.Text}' ({selectedWord.Category})");
+
+        // (Opcional) Reiniciar cuando se agoten
         if (sharedAvailableWords.Count == 0)
         {
             sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
             Debug.Log("♻️ Todas las palabras usadas. Reiniciando lista.");
         }
     }
-
-
-
-
-
-
-    /*public Transform firePoint;     // Punto desde donde salen las burbujas
-    public GameObject bubblePrefab;  // Prefab de la burbuja
-
-    void Update()
-    {
-        // Si presionas Space, dispara una burbuja
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-    }
-
-    void Shoot()
-    {
-        // Instanciar la burbuja en la posición y rotación del firePoint
-        Instantiate(bubblePrefab, firePoint.position, firePoint.rotation);
-    }*/
 }
