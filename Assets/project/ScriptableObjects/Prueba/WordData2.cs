@@ -3,10 +3,10 @@ using UnityEngine;
 public enum WordCategory
 {
     Animales,
-    Cocina,
+    Cuina,
     Casa,
-    colorsRoba,
-    Escuela
+    ColorsRoba,
+    Verbs
 }
 
 [CreateAssetMenu(fileName = "WordData2", menuName = "Scriptable Objects/Word Data 2")]
