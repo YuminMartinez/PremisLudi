@@ -11,7 +11,7 @@ public class CollisionDetection : MonoBehaviour
         FishScore fishScore = other.GetComponent<FishScore>();
         if (fishScore != null)
         {
-            int puntos = wordData.IsCorrect ? +10 : -10;
+            int puntos = wordData.IsCorrect ? 10 : -5;
             fishScore.AddPoints(puntos);
         }
 
