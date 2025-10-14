@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 8b5c728ef3ce3504c94ed6f4a3fc7557
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bubblePrefab: {fileID: 5190148567537795288, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
+  - wordPool: {fileID: 11400000, guid: dc47456edbd4db04e9e9840847dd3ef4, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

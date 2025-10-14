@@ -1,8 +1,68 @@
+锘縰sing System.Collections;
+using System.Collections.Generic; 
 using UnityEngine;
 
 public class ThrowBubbles : MonoBehaviour
 {
-    public Transform firePoint;     // Punto desde donde salen las burbujas
+
+
+    [Header("Configuraci贸n general")]
+    public GameObject bubblePrefab;
+    public WordPool wordPool;
+    public WordCategory currentCategory;
+    public float fireDelay = 2f;
+
+    // 馃敻 Lista compartida por TODOS los FirePoints
+    public static List<WordData2> sharedAvailableWords;
+
+    void Start()
+    {
+        // Solo el primer FirePoint inicializa la lista compartida
+        if (sharedAvailableWords == null || sharedAvailableWords.Count == 0)
+        {
+            sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
+            Debug.Log($"馃攣 Palabras cargadas ({sharedAvailableWords.Count}) para categor铆a {currentCategory}");
+        }
+
+        // Lanza burbujas peri贸dicamente (o puedes hacerlo por evento)
+        InvokeRepeating(nameof(SpawnBubble), 1f, fireDelay);
+    }
+
+    void SpawnBubble()
+    {
+        if (bubblePrefab == null || sharedAvailableWords == null || sharedAvailableWords.Count == 0)
+        {
+            Debug.Log("鈿狅笍 Sin palabras disponibles o prefab vac铆o.");
+            return;
+        }
+
+        // Elegir una palabra al azar de la lista compartida
+        int randomIndex = Random.Range(0, sharedAvailableWords.Count);
+        WordData2 selectedWord = sharedAvailableWords[randomIndex];
+
+        // Eliminarla para que no se repita
+        sharedAvailableWords.RemoveAt(randomIndex);
+
+        // Instanciar la burbuja en este punto
+        GameObject bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+        bubble.GetComponent<CollisionDetection>().SetWord(selectedWord);
+
+        Debug.Log($"馃挰 FirePoint '{name}' lanz贸 '{selectedWord.Text}' ({selectedWord.Category})");
+
+        // Si se acaban las palabras, opcionalmente reiniciamos
+        if (sharedAvailableWords.Count == 0)
+        {
+            sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
+            Debug.Log("鈾伙笍 Todas las palabras usadas. Reiniciando lista.");
+        }
+    }
+
+
+
+
+
+
+    /*public Transform firePoint;     // Punto desde donde salen las burbujas
     public GameObject bubblePrefab;  // Prefab de la burbuja
 
     void Update()
@@ -16,7 +76,7 @@ public class ThrowBubbles : MonoBehaviour
 
     void Shoot()
     {
-        // Instanciar la burbuja en la posici髇 y rotaci髇 del firePoint
+        // Instanciar la burbuja en la posici贸n y rotaci贸n del firePoint
         Instantiate(bubblePrefab, firePoint.position, firePoint.rotation);
-    }
+    }*/
 }

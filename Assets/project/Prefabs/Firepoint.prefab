@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Firepoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5c728ef3ce3504c94ed6f4a3fc7557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 4392749004289294944}
   bubblePrefab: {fileID: 5190148567537795288, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
+  wordPool: {fileID: 11400000, guid: dc47456edbd4db04e9e9840847dd3ef4, type: 2}
+  currentCategory: 1
+  fireDelay: 2
