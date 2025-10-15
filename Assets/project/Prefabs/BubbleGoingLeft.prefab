@@ -186,11 +186,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5458609966981407591}
   - component: {fileID: 7009402256404179910}
-  - component: {fileID: 3857215343786405188}
+  - component: {fileID: -7735251953822019162}
   - component: {fileID: 5314607267659576136}
   - component: {fileID: 3785126280328164927}
   m_Layer: 0
-  m_Name: Bubble
+  m_Name: BubbleGoingLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,7 +267,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3857215343786405188
+--- !u!114 &-7735251953822019162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5190148567537795288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85414ad580d7ad846a753e558cc09cb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7f1396c56099b44aab1b4fc4b36d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &5314607267659576136

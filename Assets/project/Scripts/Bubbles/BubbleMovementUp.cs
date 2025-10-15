@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BubbleMovement : MonoBehaviour
+public class BubbleMovementUp : MonoBehaviour
 {
     private Vector3 startPos;
     private float verticalSpeed;
