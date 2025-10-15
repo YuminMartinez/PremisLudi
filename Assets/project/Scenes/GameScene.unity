@@ -169,6 +169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 1894980166677057291, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9799995
@@ -918,6 +922,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
+      propertyPath: currentCategory
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
