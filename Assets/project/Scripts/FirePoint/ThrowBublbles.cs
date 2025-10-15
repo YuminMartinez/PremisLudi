@@ -8,7 +8,7 @@ public class ThrowBubbles : MonoBehaviour
     public GameObject bubblePrefab;
     public WordPool wordPool;
     public WordCategory currentCategory;
-    public float fireDelay = 2f;
+    [SerializeField] private float fireDelay = 2f;
 
     // Lista compartida por TODOS los FirePoints
     public static List<WordData2> sharedAvailableWords;
