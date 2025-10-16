@@ -34,4 +34,9 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("Level5");
     }
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("InitScreen");
+
+    }
 }
