@@ -2,7 +2,14 @@ using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
-    public float speed = 5f; // velocidad de movimiento
+    private Rigidbody2D fish;
+    public float speed = 8f; // velocidad de movimiento
+
+    private void Awake()
+    {
+        fish = GetComponent<Rigidbody2D>();
+        fish.transform.position = Vector3.zero;
+    }
 
     void Update()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class Timer : MonoBehaviour
     void OnTimerEnd()
     {
         // You can trigger game over or any other action here
-        Debug.Log("Game Over!");
+        SceneManager.LoadScene("ScoreScreen");
         // Example: FindObjectOfType<GameManager>().GameOver();
     }
 }
