@@ -7,7 +7,13 @@ public class Timer : MonoBehaviour
     [Header("Timer Settings")]
     private float timeRemaining; // seconds
     public bool timerIsRunning = false;
-    [SerializeField] private WordCategory category;    
+    [SerializeField] private WordCategory category;
+
+
+    [Header("Gameplay Data")]
+    [SerializeField] private FishScore fishScore;  // arrástralo en el inspector (opcional)
+    [SerializeField] private int wordsLearned = 0; // se irá incrementando durante la partida
+
 
     [Header("UI Reference")]
     [SerializeField] TMP_Text timerText; // Assign your TMP text here in Inspector
@@ -70,8 +76,36 @@ public class Timer : MonoBehaviour
 
     void OnTimerEnd()
     {
+        // Guarda los datos en PlayerPrefs
+        PlayerPrefs.SetInt("FinalScore", FindObjectOfType<FishScore>().Score);
+        PlayerPrefs.SetInt("WordsLearned", wordsLearned);
+
+        PlayerPrefs.Save(); // Guarda los datos en disco
+
         // You can trigger game over or any other action here
         SceneManager.LoadScene("ScoreScreen");
         // Example: FindObjectOfType<GameManager>().GameOver();
     }
+
+
+    // --- API pública para contar palabras aprendidas ---
+
+    // Suma 1 (o la cantidad que pases)
+    public void IncrementWordsLearned(int amount = 1)
+    {
+        wordsLearned += amount;
+    }
+
+    // Fija el valor directamente
+    public void SetWordsLearned(int value)
+    {
+        wordsLearned = Mathf.Max(0, value);
+    }
+
+    // Leer el valor actual (por si lo necesitas)
+    public int GetWordsLearned()
+    {
+        return wordsLearned;
+    }
+
 }

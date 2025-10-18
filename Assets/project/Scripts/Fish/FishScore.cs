@@ -21,6 +21,7 @@ public class FishScore : MonoBehaviour
     {
         if (correct)
         {
+            FindObjectOfType<Timer>()?.IncrementWordsLearned();
             combo++;
 
             if (combo < 3)
