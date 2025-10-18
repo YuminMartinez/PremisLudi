@@ -7,9 +7,7 @@ public class FinalScreenController : MonoBehaviour
     [SerializeField] private TMP_Text paraulesText;
     [SerializeField] private TMP_Text puntuacioText;
 
-    [Header("Nombres de escenas")]
-    [SerializeField] private string menuScene = "Menu";
-    [SerializeField] private string levelsScene = "MenuNivells";
+
 
     void Start()
     {
