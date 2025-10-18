@@ -234,6 +234,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Radius
+      value: 0.5361351
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.58218086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16060156
+      objectReference: {fileID: 0}
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.37
@@ -273,6 +285,22 @@ PrefabInstance:
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7508374158388172459, guid: 0cc3f5878975bdc4f83eaa86e05bac89, type: 3}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 802887082384619129, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
@@ -393,8 +421,8 @@ RectTransform:
   - {fileID: 492684476}
   - {fileID: 491729720}
   - {fileID: 633923646}
-  - {fileID: 1121139494}
   - {fileID: 664339592}
+  - {fileID: 1121139494}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -491,7 +519,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2917959785987141813, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_Name
-      value: Firepoint right
+      value: Firepoint left
       objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalPosition.x
@@ -540,7 +568,7 @@ PrefabInstance:
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: bubblePrefab
       value: 
-      objectReference: {fileID: 5190148567537795288, guid: 3e99857b04cc1fb4da91299d45a6e979, type: 3}
+      objectReference: {fileID: 5190148567537795288, guid: 98ddae3a5cb457d4d93b32a2d62730e5, type: 3}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: currentCategory
       value: 2
@@ -931,7 +959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664339592}
   m_Layer: 5
-  m_Name: FIREPOINT LEFT
+  m_Name: FIREPOINT RIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1396,7 +1424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121139494}
   m_Layer: 5
-  m_Name: FIREPOINT RIGHT
+  m_Name: FIREPOINT LEFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1837,7 +1865,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2917959785987141813, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_Name
-      value: Firepoint left
+      value: Firepoint right
       objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1886,7 +1914,7 @@ PrefabInstance:
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: bubblePrefab
       value: 
-      objectReference: {fileID: 5190148567537795288, guid: 98ddae3a5cb457d4d93b32a2d62730e5, type: 3}
+      objectReference: {fileID: 5190148567537795288, guid: 3e99857b04cc1fb4da91299d45a6e979, type: 3}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: currentCategory
       value: 2

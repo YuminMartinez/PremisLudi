@@ -234,6 +234,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Radius
+      value: 0.5000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.65045106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531643033638314774, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16011107
+      objectReference: {fileID: 0}
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.37
@@ -273,6 +285,22 @@ PrefabInstance:
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7508374158388172459, guid: 0cc3f5878975bdc4f83eaa86e05bac89, type: 3}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 802887082384619129, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
