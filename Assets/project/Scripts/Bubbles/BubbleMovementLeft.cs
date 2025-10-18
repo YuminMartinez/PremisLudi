@@ -24,7 +24,7 @@ public class BubbleMovementLeft : MonoBehaviour
         // Oscilación vertical tipo zigzag
         transform.position = new Vector3(
             transform.position.x,
-            startPos.x + Mathf.Sin(Time.time * verticalFrequency) * verticalAmplitude,
+            startPos.y + Mathf.Sin(Time.time * verticalFrequency) * verticalAmplitude,
             transform.position.z
         );
     }
