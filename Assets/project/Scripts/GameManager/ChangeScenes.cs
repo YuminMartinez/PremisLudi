@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScenes : MonoBehaviour
@@ -12,31 +10,44 @@ public class ChangeScenes : MonoBehaviour
 
     public void GoToLevel1()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level1"); // el 1 siempre disponible
     }
 
     public void GoToLevel2()
     {
-        SceneManager.LoadScene("Level2");
+        if (PlayerPrefs.GetInt("Level1Completed", 0) == 1)
+            SceneManager.LoadScene("Level2");
+        else
+            Debug.Log("❌ Nivel 2 bloqueado");
     }
 
     public void GoToLevel3()
     {
-        SceneManager.LoadScene("Level3");
+        if (PlayerPrefs.GetInt("Level2Completed", 0) == 1)
+            SceneManager.LoadScene("Level3");
+        else
+            Debug.Log("❌ Nivel 3 bloqueado");
     }
 
     public void GoToLevel4()
     {
-        SceneManager.LoadScene("Level4");
+        if (PlayerPrefs.GetInt("Level3Completed", 0) == 1)
+            SceneManager.LoadScene("Level4");
+        else
+            Debug.Log("❌ Nivel 4 bloqueado");
     }
 
     public void GoToLevel5()
     {
-        SceneManager.LoadScene("Level5");
+        if (PlayerPrefs.GetInt("Level4Completed", 0) == 1)
+            SceneManager.LoadScene("Level5");
+        else
+            Debug.Log("❌ Nivel 5 bloqueado");
     }
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("InitScreen");
-
     }
 }
+
