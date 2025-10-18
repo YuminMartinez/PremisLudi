@@ -1,25 +1,43 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
     private Rigidbody2D fish;
-    public float speed = 8f; // velocidad de movimiento
+    public float speed = 8f; // Velocidad del movimiento
 
     private void Awake()
     {
         fish = GetComponent<Rigidbody2D>();
         fish.transform.position = Vector3.zero;
+
+
     }
 
     void Update()
     {
-        // 1. Obtener posición del ratón en el mundo
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //  Si hay un toque en pantalla (mÃ³vil)
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
 
-        // 2. Calcular la dirección desde el objeto hacia el ratón
-        Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
+            // Solo queremos reaccionar cuando toca o arrastra el dedo
+            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+            {
+                Vector3 worldPos = Camera.main.ScreenToWorldPoint(touch.position);
+                worldPos.z = 0f;
 
-        // 3. Mover el objeto en esa dirección poco a poco
-        transform.position = (Vector2)transform.position + direction * speed * Time.deltaTime;
+                Vector2 direction = ((Vector2)worldPos - (Vector2)transform.position).normalized;
+                transform.position = (Vector2)transform.position + direction * speed * Time.deltaTime;
+            }
+        }
+        else // es qe es pc entonces
+        {
+            if (Input.GetMouseButton(0))
+            {
+                Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
+                transform.position = (Vector2)transform.position + direction * speed * Time.deltaTime;
+            }
+        }
     }
-}
+} 
