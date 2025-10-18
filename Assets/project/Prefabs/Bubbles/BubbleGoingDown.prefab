@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 8446452063853733690}
   - component: {fileID: -3511935588242500819}
   m_Layer: 0
-  m_Name: BubbleGoingDow
+  m_Name: BubbleGoingDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

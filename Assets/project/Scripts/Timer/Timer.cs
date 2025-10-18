@@ -5,11 +5,29 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [Header("Timer Settings")]
-    [SerializeField] private float timeRemaining = 90f; // seconds
+    private float timeRemaining; // seconds
     public bool timerIsRunning = false;
+    [SerializeField] private WordCategory category;    
 
     [Header("UI Reference")]
     [SerializeField] TMP_Text timerText; // Assign your TMP text here in Inspector
+
+    private void Awake()
+    {
+        if(category == WordCategory.Animales)
+        {
+            timeRemaining = 90.0f;
+        } else if(category == WordCategory.Cuina)
+        {
+            timeRemaining = 75.0f;
+        } else if(category==WordCategory.Casa || category == WordCategory.ColorsRoba)
+        {
+            timeRemaining = 60.0f;
+        } else if (category == WordCategory.Verbs)
+        {
+            timeRemaining = 45.0f;
+        }
+    }
 
     void Start()
     {

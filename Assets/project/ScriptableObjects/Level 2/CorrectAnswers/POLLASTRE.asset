@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7cb3ebf76ad2c446b44ce9a8e5a80df, type: 3}
-  m_Name: PPOLASTRE
+  m_Name: POLLASTRE
   m_EditorClassIdentifier: 
   text: POLLASTRE
   isCorrect: 1
