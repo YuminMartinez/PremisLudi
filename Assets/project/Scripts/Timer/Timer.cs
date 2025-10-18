@@ -15,6 +15,14 @@ public class Timer : MonoBehaviour
     [SerializeField] private int wordsLearned = 0; // se irá incrementando durante la partida
 
 
+    [Header("Level complete")]
+    public bool level1 = false;
+    public bool level2 = false;
+    public bool level3 = false;
+    public bool level4 = false;
+    public bool level5 = false;
+
+
     [Header("UI Reference")]
     [SerializeField] TMP_Text timerText; // Assign your TMP text here in Inspector
 
@@ -85,10 +93,36 @@ public class Timer : MonoBehaviour
         // You can trigger game over or any other action here
         SceneManager.LoadScene("ScoreScreen");
         // Example: FindObjectOfType<GameManager>().GameOver();
+
+
+        if (category == WordCategory.Animales)
+        {
+            PlayerPrefs.SetInt("Level1Completed", 1);
+        }
+        else if (category == WordCategory.Cuina)
+        {
+            PlayerPrefs.SetInt("Level2Completed", 1);
+        }
+        else if (category == WordCategory.Casa)
+        {
+            PlayerPrefs.SetInt("Level3Completed", 1);
+        }
+        else if (category == WordCategory.ColorsRoba)
+        {
+            PlayerPrefs.SetInt("Level4Completed", 1);
+        }
+        else if (category == WordCategory.Verbs)
+        {
+            PlayerPrefs.SetInt("Level5Completed", 1);
+        }
+
+        PlayerPrefs.Save();
+
+
     }
 
 
-    // --- API pública para contar palabras aprendidas ---
+
 
     // Suma 1 (o la cantidad que pases)
     public void IncrementWordsLearned(int amount = 1)
