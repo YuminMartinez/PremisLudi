@@ -143,6 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abae643d708a13488822a12bc694b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctWordsPoints: 15
+  incorrectWordsPoints: -5
+  firstComboPoint: 15
 --- !u!58 &2531643033638314774
 CircleCollider2D:
   m_ObjectHideFlags: 0

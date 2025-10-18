@@ -294,6 +294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordData: {fileID: 0}
+  correctWordsPoints: 10
+  incorrectWordsPoints: -5
+  firstComboPoint: 15
 --- !u!58 &3785126280328164927
 CircleCollider2D:
   m_ObjectHideFlags: 0
