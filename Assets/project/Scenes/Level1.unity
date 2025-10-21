@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: fireDelay
-      value: 2
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: currentCategory
@@ -285,6 +285,10 @@ PrefabInstance:
     - target: {fileID: 3385127046828118336, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705646658994576629, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
+      propertyPath: correctWordsPoints
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4484325976506567373, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
       propertyPath: m_Sprite
@@ -659,7 +663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2917959785987141813, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,6 +1019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Firepoint up
       objectReference: {fileID: 0}
+    - target: {fileID: 2917959785987141813, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1057,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: fireDelay
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5285340302008433222, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: bubblePrefab
@@ -1931,8 +1939,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TORNAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e947d8f0e3eba743ac3c167b7e3e3ae, type: 2}
+  m_sharedMaterial: {fileID: 1729833994745656021, guid: 7e947d8f0e3eba743ac3c167b7e3e3ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2059,7 +2067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1854673676
 RectTransform:
   m_ObjectHideFlags: 0
