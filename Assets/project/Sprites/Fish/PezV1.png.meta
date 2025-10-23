@@ -103,10 +103,10 @@ TextureImporter:
       name: PezV1_0
       rect:
         serializedVersion: 2
-        x: 140
-        y: 141
-        width: 1529
-        height: 1235
+        x: 141
+        y: 142
+        width: 1527
+        height: 1233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd252aa998560594bb6cb1749ea6e057
     internalID: 0
     vertices: []
     indices: 
