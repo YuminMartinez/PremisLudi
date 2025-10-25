@@ -12,6 +12,7 @@ public class FloatingDelta : MonoBehaviour
         tmp = GetComponent<TextMeshProUGUI>();
     }
 
+    //numero que quieres mostrar
     public void Show(int delta)
     {
         if (tmp == null) return;
