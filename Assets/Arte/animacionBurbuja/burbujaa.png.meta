@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: ea8c8d223aaee8643b3b2ead5b1e3eba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2447196438107530918
+    second: burbujaa_0
+  - first:
+      213: 7293698440814478817
+    second: burbujaa_1
+  - first:
+      213: -8483486502391158516
+    second: burbujaa_2
+  - first:
+      213: 3814021264412952225
+    second: burbujaa_3
+  - first:
+      213: 8359295921842991355
+    second: burbujaa_4
+  - first:
+      213: -1671701087960957226
+    second: burbujaa_5
+  - first:
+      213: -1290504940052507370
+    second: burbujaa_6
+  - first:
+      213: -2306366623446566264
+    second: burbujaa_7
+  - first:
+      213: 3793019403285900131
+    second: burbujaa_8
+  - first:
+      213: -4708410658889361524
+    second: burbujaa_9
+  - first:
+      213: -8893660625875770271
+    second: burbujaa_10
+  - first:
+      213: 1258155596906796409
+    second: burbujaa_11
+  - first:
+      213: -1496432359615687799
+    second: burbujaa_12
+  - first:
+      213: -8721838410584427397
+    second: burbujaa_13
+  - first:
+      213: -4459519379435653380
+    second: burbujaa_14
+  - first:
+      213: -1081869664506986721
+    second: burbujaa_15
+  - first:
+      213: 1387469421917201900
+    second: burbujaa_16
+  - first:
+      213: -8483950089437559214
+    second: burbujaa_17
+  - first:
+      213: 8448544857882397313
+    second: burbujaa_18
+  - first:
+      213: -1179607906412592512
+    second: burbujaa_19
+  - first:
+      213: -2008499405054527898
+    second: burbujaa_20
+  - first:
+      213: -8080320236199057793
+    second: burbujaa_21
+  - first:
+      213: 5677130428694965172
+    second: burbujaa_22
+  - first:
+      213: 118380131440622137
+    second: burbujaa_23
+  - first:
+      213: 7816019915555550281
+    second: burbujaa_24
+  - first:
+      213: -5453006869790457318
+    second: burbujaa_25
+  - first:
+      213: 8858397352960343759
+    second: burbujaa_26
+  - first:
+      213: 8548111389748336286
+    second: burbujaa_27
+  - first:
+      213: 8011171193613785614
+    second: burbujaa_28
+  - first:
+      213: -4343184777141169829
+    second: burbujaa_29
+  - first:
+      213: -455966681125301596
+    second: burbujaa_30
+  - first:
+      213: 3431806535692251812
+    second: burbujaa_31
+  - first:
+      213: 7356547397494669994
+    second: burbujaa_32
+  - first:
+      213: -6778337797457433250
+    second: burbujaa_33
+  - first:
+      213: -4948391258269491473
+    second: burbujaa_34
+  - first:
+      213: -2376214356770443731
+    second: burbujaa_35
+  - first:
+      213: 5258435821886834659
+    second: burbujaa_36
+  - first:
+      213: -7136248893060745409
+    second: burbujaa_37
+  - first:
+      213: -7787550357920112090
+    second: burbujaa_38
+  - first:
+      213: -4719308629073221738
+    second: burbujaa_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 800
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: burbujaa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11311
+        width: 1581
+        height: 1564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a62005d13036f120800000000000000
+      internalID: 2447196438107530918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_1
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 11310
+        width: 1581
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e54197961c683560800000000000000
+      internalID: 7293698440814478817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_2
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 11308
+        width: 1585
+        height: 1568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09672839f9944a80800000000000000
+      internalID: -8483486502391158516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_3
+      rect:
+        serializedVersion: 2
+        x: 4891
+        y: 11305
+        width: 1590
+        height: 1572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6ce17e1202ee430800000000000000
+      internalID: 3814021264412952225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_4
+      rect:
+        serializedVersion: 2
+        x: 6522
+        y: 11302
+        width: 1596
+        height: 1576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0b2d9f95f220470800000000000000
+      internalID: 8359295921842991355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 9688
+        width: 1602
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6def371b7bcecc8e0800000000000000
+      internalID: -1671701087960957226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_6
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 9684
+        width: 1608
+        height: 1585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615984b2894371ee0800000000000000
+      internalID: -1290504940052507370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_7
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 9680
+        width: 1614
+        height: 1589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a76af86c32effd0800000000000000
+      internalID: -2306366623446566264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_8
+      rect:
+        serializedVersion: 2
+        x: 4897
+        y: 9675
+        width: 1618
+        height: 1594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b250f0d0383a430800000000000000
+      internalID: 3793019403285900131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_9
+      rect:
+        serializedVersion: 2
+        x: 6528
+        y: 9671
+        width: 1619
+        height: 1598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c879c34b37d58aeb0800000000000000
+      internalID: -4708410658889361524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8058
+        width: 1621
+        height: 1601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164ebc908ce539480800000000000000
+      internalID: -8893660625875770271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_11
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 8054
+        width: 1619
+        height: 1606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9759cc179ddd57110800000000000000
+      internalID: 1258155596906796409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_12
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 8052
+        width: 1616
+        height: 1608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98315b682ba9b3be0800000000000000
+      internalID: -1496432359615687799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_13
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 8050
+        width: 1613
+        height: 1610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74f1c40d2ec5f680800000000000000
+      internalID: -8721838410584427397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_14
+      rect:
+        serializedVersion: 2
+        x: 6537
+        y: 8050
+        width: 1610
+        height: 1609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf674cf70ca9c12c0800000000000000
+      internalID: -4459519379435653380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 6440
+        width: 1607
+        height: 1608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f3ac9a54d6cf0f0800000000000000
+      internalID: -1081869664506986721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_16
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 6440
+        width: 1602
+        height: 1605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5671e8618414310800000000000000
+      internalID: 1387469421917201900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_17
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 6440
+        width: 1598
+        height: 1601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2564ee2f754f24a80800000000000000
+      internalID: -8483950089437559214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_18
+      rect:
+        serializedVersion: 2
+        x: 4918
+        y: 6440
+        width: 1593
+        height: 1597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a880339c24f3570800000000000000
+      internalID: 8448544857882397313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_19
+      rect:
+        serializedVersion: 2
+        x: 6551
+        y: 6441
+        width: 1589
+        height: 1591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0820904ebd031afe0800000000000000
+      internalID: -1179607906412592512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 4832
+        width: 1585
+        height: 1585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666342ebe606024e0800000000000000
+      internalID: -2008499405054527898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_21
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 4832
+        width: 1581
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7664f97e8fecdf80800000000000000
+      internalID: -8080320236199057793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_22
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 4833
+        width: 1578
+        height: 1575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbace1db0839ce40800000000000000
+      internalID: 5677130428694965172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_23
+      rect:
+        serializedVersion: 2
+        x: 4933
+        y: 4834
+        width: 1574
+        height: 1570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a7bf23a1294a100800000000000000
+      internalID: 118380131440622137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_24
+      rect:
+        serializedVersion: 2
+        x: 6565
+        y: 4834
+        width: 1571
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9443110c3b4187c60800000000000000
+      internalID: 7816019915555550281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3225
+        width: 1569
+        height: 1562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a120068a4270354b0800000000000000
+      internalID: -5453006869790457318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_26
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 3225
+        width: 1567
+        height: 1561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce367e65795fea70800000000000000
+      internalID: 8858397352960343759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_27
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 3226
+        width: 1566
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e969b66e40ef0a670800000000000000
+      internalID: 8548111389748336286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_28
+      rect:
+        serializedVersion: 2
+        x: 4938
+        y: 3226
+        width: 1565
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a113e61c56d2f60800000000000000
+      internalID: 8011171193613785614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_29
+      rect:
+        serializedVersion: 2
+        x: 6565
+        y: 3228
+        width: 1567
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51dd94d478e9b3c0800000000000000
+      internalID: -4343184777141169829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_30
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1621
+        width: 1568
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2dc1628b41ca9f0800000000000000
+      internalID: -455966681125301596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_31
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1624
+        width: 1570
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2fcc99cd930af20800000000000000
+      internalID: 3431806535692251812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_32
+      rect:
+        serializedVersion: 2
+        x: 3293
+        y: 1628
+        width: 1572
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa28ef0a1e4b71660800000000000000
+      internalID: 7356547397494669994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_33
+      rect:
+        serializedVersion: 2
+        x: 4918
+        y: 1632
+        width: 1574
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d22f6bfa18ee1a0800000000000000
+      internalID: -6778337797457433250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_34
+      rect:
+        serializedVersion: 2
+        x: 6542
+        y: 1637
+        width: 1576
+        height: 1559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed2394e58c35bb0800000000000000
+      internalID: -4948391258269491473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_35
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 30
+        width: 1577
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ea38ad1adf50fd0800000000000000
+      internalID: -2376214356770443731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_36
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 34
+        width: 1578
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e701c50587b9f840800000000000000
+      internalID: 5258435821886834659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_37
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 37
+        width: 1579
+        height: 1561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37f654f073f6fc90800000000000000
+      internalID: -7136248893060745409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_38
+      rect:
+        serializedVersion: 2
+        x: 4894
+        y: 39
+        width: 1580
+        height: 1562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622a4bda5301de390800000000000000
+      internalID: -7787550357920112090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burbujaa_39
+      rect:
+        serializedVersion: 2
+        x: 6521
+        y: 41
+        width: 1581
+        height: 1562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697a7aa4ec5a18eb0800000000000000
+      internalID: -4719308629073221738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      burbujaa_0: 2447196438107530918
+      burbujaa_1: 7293698440814478817
+      burbujaa_10: -8893660625875770271
+      burbujaa_11: 1258155596906796409
+      burbujaa_12: -1496432359615687799
+      burbujaa_13: -8721838410584427397
+      burbujaa_14: -4459519379435653380
+      burbujaa_15: -1081869664506986721
+      burbujaa_16: 1387469421917201900
+      burbujaa_17: -8483950089437559214
+      burbujaa_18: 8448544857882397313
+      burbujaa_19: -1179607906412592512
+      burbujaa_2: -8483486502391158516
+      burbujaa_20: -2008499405054527898
+      burbujaa_21: -8080320236199057793
+      burbujaa_22: 5677130428694965172
+      burbujaa_23: 118380131440622137
+      burbujaa_24: 7816019915555550281
+      burbujaa_25: -5453006869790457318
+      burbujaa_26: 8858397352960343759
+      burbujaa_27: 8548111389748336286
+      burbujaa_28: 8011171193613785614
+      burbujaa_29: -4343184777141169829
+      burbujaa_3: 3814021264412952225
+      burbujaa_30: -455966681125301596
+      burbujaa_31: 3431806535692251812
+      burbujaa_32: 7356547397494669994
+      burbujaa_33: -6778337797457433250
+      burbujaa_34: -4948391258269491473
+      burbujaa_35: -2376214356770443731
+      burbujaa_36: 5258435821886834659
+      burbujaa_37: -7136248893060745409
+      burbujaa_38: -7787550357920112090
+      burbujaa_39: -4719308629073221738
+      burbujaa_4: 8359295921842991355
+      burbujaa_5: -1671701087960957226
+      burbujaa_6: -1290504940052507370
+      burbujaa_7: -2306366623446566264
+      burbujaa_8: 3793019403285900131
+      burbujaa_9: -4708410658889361524
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
