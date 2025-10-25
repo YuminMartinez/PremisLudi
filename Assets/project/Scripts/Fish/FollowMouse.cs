@@ -3,8 +3,12 @@
 public class FollowMouse : MonoBehaviour
 {
     private Rigidbody2D fish;
-    public float speed = 8f; // Velocidad del movimiento
+    public float speed = 8f;
     private bool isFacingRight = true;
+
+    private Vector2 targetPos;
+    private bool hasTarget = false;
+    public float stopDistance = 0.1f; // distancia mínima para "llegar"
 
     private void Awake()
     {
@@ -14,10 +18,9 @@ public class FollowMouse : MonoBehaviour
 
     void Update()
     {
-        Vector2 targetPos = Vector2.zero;
         bool hasInput = false;
 
-        // 🟢 Movimiento con toque (móvil)
+        // --- Movimiento con toque (móvil) ---
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -27,28 +30,38 @@ public class FollowMouse : MonoBehaviour
                 Vector3 worldPos = Camera.main.ScreenToWorldPoint(touch.position);
                 worldPos.z = 0f;
                 targetPos = worldPos;
+                hasTarget = true;
                 hasInput = true;
             }
         }
-        // 🖱️ Movimiento con ratón (PC)
+        // --- Movimiento con ratón (PC) ---
         else if (Input.GetMouseButton(0))
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseWorldPos.z = 0f;
             targetPos = mouseWorldPos;
+            hasTarget = true;
             hasInput = true;
         }
 
-        // 🔹 Movimiento + flip
-        if (hasInput)
+        if (hasTarget)
         {
-            Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
-            transform.position = (Vector2)transform.position + direction * speed * Time.deltaTime;
+            Vector2 currentPos = transform.position;
+            Vector2 direction = (targetPos - currentPos);
 
-            // Si el pez se mueve hacia la izquierda y está mirando a la derecha → girar
+            // si ya llegó (o muy cerca)
+            if (direction.magnitude < stopDistance)
+            {
+                hasTarget = false;
+                return; // se queda quieto mirando al último lado
+            }
+
+            direction.Normalize();
+            transform.position = currentPos + direction * speed * Time.deltaTime;
+
+            // Flip solo cuando se mueve en dirección contraria a su mirada actual
             if (direction.x < 0 && isFacingRight)
                 Flip();
-            // Si se mueve a la derecha y está mirando a la izquierda → girar
             else if (direction.x > 0 && !isFacingRight)
                 Flip();
         }
