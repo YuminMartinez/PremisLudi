@@ -22,6 +22,11 @@ public class CollisionDetection : MonoBehaviour
         int delta = correct ? +10 : -5;
         fishScore.AddPoints(correct);
 
+        if (correct)
+            AudioManager.Instance.PlayCorrectClip();
+        else
+            AudioManager.Instance.PlayIncorrectClip();
+
         // 👇 Instanciar y mostrar el texto flotante
         if (floatingDeltaPrefab != null && canvasTransform != null)
         {

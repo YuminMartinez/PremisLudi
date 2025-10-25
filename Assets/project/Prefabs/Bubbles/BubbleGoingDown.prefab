@@ -294,6 +294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordData: {fileID: 0}
+  floatingDeltaPrefab: {fileID: 0}
+  canvasTransform: {fileID: 0}
 --- !u!58 &3785126280328164927
 CircleCollider2D:
   m_ObjectHideFlags: 0
