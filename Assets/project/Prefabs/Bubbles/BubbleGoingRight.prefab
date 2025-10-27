@@ -296,6 +296,8 @@ MonoBehaviour:
   wordData: {fileID: 0}
   floatingDeltaPrefab: {fileID: 0}
   canvasTransform: {fileID: 0}
+  correctParticles: {fileID: 2853549265582335469, guid: d2c1a6acc0502804a84952e8a8cb5a35, type: 3}
+  incorrectParticles: {fileID: 997917901231388622, guid: ce2918a8789f3c24dabaad3f715b6e15, type: 3}
 --- !u!58 &3785126280328164927
 CircleCollider2D:
   m_ObjectHideFlags: 0
