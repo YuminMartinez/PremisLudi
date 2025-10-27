@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: da36993ec8847884d9f91a5343668984
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wordData: {instanceID: 0}
+  - floatingDeltaPrefab: {instanceID: 0}
+  - canvasTransform: {instanceID: 0}
+  - correctParticles: {fileID: 2853549265582335469, guid: d2c1a6acc0502804a84952e8a8cb5a35, type: 3}
+  - incorrectParticles: {fileID: 997917901231388622, guid: ce2918a8789f3c24dabaad3f715b6e15, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

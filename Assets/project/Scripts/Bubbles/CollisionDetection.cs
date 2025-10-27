@@ -8,6 +8,9 @@ public class CollisionDetection : MonoBehaviour
     [SerializeField] private GameObject floatingDeltaPrefab; // Prefab con el script FloatingDelta
     [SerializeField] private Transform canvasTransform;      // Canvas (para UI Text)
 
+    [SerializeField] private GameObject correctParticles;    // Prefab de partículas para respuestas correctas
+    [SerializeField] private GameObject incorrectParticles;  // Prefab de partículas para respuestas incorrectas
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Fish")) return;
@@ -24,8 +27,12 @@ public class CollisionDetection : MonoBehaviour
 
         if (correct)
             AudioManager.Instance.PlayCorrectClip();
+        if (correctParticles != null)
+            Instantiate(correctParticles, transform.position, Quaternion.identity);
         else
             AudioManager.Instance.PlayIncorrectClip();
+        if (incorrectParticles != null)
+                Instantiate(incorrectParticles, transform.position, Quaternion.identity);
 
         // 👇 Instanciar y mostrar el texto flotante
         if (floatingDeltaPrefab != null && canvasTransform != null)
