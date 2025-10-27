@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;   // List<>
-using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;   // List<>
 using TMPro;                        // TMP_Text
+using UnityEngine;
 
 public class ThrowBubbles : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ThrowBubbles : MonoBehaviour
     public WordPool wordPool;
     public WordCategory currentCategory;
     [SerializeField] private float fireDelay = 2f;
-
+    [SerializeField]  private float wait = 6f; // dura 4 segundos visible
     // Lista compartida por TODOS los FirePoints
     public static List<WordData2> sharedAvailableWords;
 
@@ -17,8 +18,13 @@ public class ThrowBubbles : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetStatics() => sharedAvailableWords = null;
 
+
+
+  
     void Start()
     {
+       
+
         if (wordPool == null) { Debug.LogError("WordPool no asignado", this); return; }
         if (bubblePrefab == null) { Debug.LogError("BubblePrefab no asignado", this); return; }
 
@@ -28,15 +34,20 @@ public class ThrowBubbles : MonoBehaviour
             sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
             Debug.Log($"🔁 Palabras cargadas ({sharedAvailableWords.Count}) para categoría {currentCategory}");
         }
-
-        InvokeRepeating(nameof(SpawnBubble), 1f, fireDelay);
+        StartCoroutine(Explicacion());
+       
     }
-
+    IEnumerator Explicacion()
+    {
+        yield return new WaitForSeconds(wait);
+        InvokeRepeating(nameof(SpawnBubble), 1f, fireDelay);
+        Debug.Log("Coroutine finalizada tras 2 segundos.");
+    }
     void SpawnBubble()
     {
         if (sharedAvailableWords == null || sharedAvailableWords.Count == 0)
         {
-            Debug.Log("⚠️ Sin palabras disponibles.");
+            Debug.Log(" Sin palabras disponibles.");
             return;
         }
 
