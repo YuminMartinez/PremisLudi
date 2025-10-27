@@ -1843,8 +1843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: 0.0000047684}
-  m_SizeDelta: {x: 685.4, y: 77.62}
+  m_AnchoredPosition: {x: 4.63, y: 0.0000047684}
+  m_SizeDelta: {x: 497.27, y: 77.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112600628
 MonoBehaviour:
@@ -1866,7 +1866,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Explota les bombolles amb roba o color
+  m_text: 'Anem a fer la bugada!
+
+    Separem-la per roba i colors.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1931,7 +1933,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 381.3077, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.55838007, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

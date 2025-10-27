@@ -408,66 +408,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 602342608}
   m_SourcePrefab: {fileID: 100100000, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
---- !u!1001 &224741801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5190148567537795288, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_Name
-      value: BubbleGoingUp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.90846384
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.27267632
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5458609966981407591, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2492934383661487047, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 72ea2fc4c55eaf848bbee0af2fdae50a, type: 3}
 --- !u!114 &240650678 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3705646658994576629, guid: 4c7ff577fd9ae6840b61676583fa0817, type: 3}
@@ -2618,7 +2558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Menja les bombolles amb  paraules d'animals!
+  m_text: "Els peixos som animals, ajuda'm a buscar-ne m\xE9s."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3126,6 +3066,5 @@ SceneRoots:
   - {fileID: 158328814}
   - {fileID: 273417543}
   - {fileID: 1192432001}
-  - {fileID: 224741801}
   - {fileID: 2035796756}
   - {fileID: 1275941338}
