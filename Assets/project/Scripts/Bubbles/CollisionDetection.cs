@@ -26,13 +26,18 @@ public class CollisionDetection : MonoBehaviour
         fishScore.AddPoints(correct);
 
         if (correct)
-            AudioManager.Instance.PlayCorrectClip();
-        if (correctParticles != null)
-            Instantiate(correctParticles, transform.position, Quaternion.identity);
+        {
+            AudioManager.Instance.PlayCorrectClip(); // Reproduce sonido de respuesta correcta
+            if (correctParticles != null)
+                Instantiate(correctParticles, transform.position, Quaternion.identity); // Instancia partículas correctas
+        }
         else
-            AudioManager.Instance.PlayIncorrectClip();
-        if (incorrectParticles != null)
-                Instantiate(incorrectParticles, transform.position, Quaternion.identity);
+        {
+            AudioManager.Instance.PlayIncorrectClip(); // Reproduce sonido de respuesta incorrecta
+            if (incorrectParticles != null)
+                Instantiate(incorrectParticles, transform.position, Quaternion.identity); // Instancia partículas incorrectas
+        }
+
 
         // 👇 Instanciar y mostrar el texto flotante
         if (floatingDeltaPrefab != null && canvasTransform != null)
