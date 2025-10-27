@@ -2069,6 +2069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Firepoint right
       objectReference: {fileID: 0}
+    - target: {fileID: 2917959785987141813, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392749004289294944, guid: 7b729f23a0a6ff148b2e662f70549030, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2313,7 +2317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1854673676
 RectTransform:
   m_ObjectHideFlags: 0
