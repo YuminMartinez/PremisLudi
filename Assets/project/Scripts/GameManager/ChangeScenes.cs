@@ -49,5 +49,10 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("InitScreen");
     }
+
+    public void GoToCreditsScene()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
 }
 
