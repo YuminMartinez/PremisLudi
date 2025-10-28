@@ -1,18 +1,19 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-
+using System.Collections;
 public class Timer : MonoBehaviour
 {
     [Header("Timer Settings")]
+    [SerializeField] private float startDelay = 4f;
     private float timeRemaining; // seconds
     public bool timerIsRunning = false;
     [SerializeField] private WordCategory category;
 
 
     [Header("Gameplay Data")]
-    [SerializeField] private FishScore fishScore;  // arr�stralo en el inspector (opcional)
-    [SerializeField] private int wordsLearned = 0; // se ir� incrementando durante la partida
+    [SerializeField] private FishScore fishScore;  // arrástralo en el inspector (opcional)
+    [SerializeField] private int wordsLearned = 0; // se irá incrementando durante la partida
 
 
     [Header("Level complete")]
@@ -45,11 +46,22 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        // Start timer automatically
-        timerIsRunning = true;
-        DisplayTime(timeRemaining);
-    }
+        
+        timerIsRunning = false;
+      
 
+        DisplayTime(timeRemaining);
+
+        
+        StartCoroutine(StartTimerWithDelay());
+    }
+    private IEnumerator StartTimerWithDelay()
+    {
+        Debug.Log($"⏳ Esperando {startDelay} segundos antes de iniciar el timer...");
+        yield return new WaitForSecondsRealtime(startDelay);
+        Debug.Log("▶️ Timer iniciado!");
+        timerIsRunning = true;
+    }
     void Update()
     {
         if (timerIsRunning)
