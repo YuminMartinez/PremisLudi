@@ -78,6 +78,7 @@ public class Timer : MonoBehaviour
                 OnTimerEnd();
             }
         }
+   
     }
 
     void DisplayTime(float timeToDisplay)
