@@ -17,9 +17,30 @@ public class LockLevelsImage : MonoBehaviour
         lockImage5.gameObject.SetActive(true);
     }
 
+
+
     private void Start()
     {
         RefreshLocks();
+    }
+
+    void Update()
+    {
+        Debug.Log("Update del LockLevelsImage está corriendo...");
+        // CHEAT CODE: presiona espacio para desbloquear todos los niveles
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Cheat activado: todos los niveles desbloqueados.");
+
+            PlayerPrefs.SetInt("Level1Completed", 1);
+            PlayerPrefs.SetInt("Level2Completed", 1);
+            PlayerPrefs.SetInt("Level3Completed", 1);
+            PlayerPrefs.SetInt("Level4Completed", 1);
+            PlayerPrefs.Save();
+
+            // Refresca la UI de los candados inmediatamente
+            RefreshLocks();
+        }
     }
 
     // Llama a esto cuando vuelvas del nivel o tras guardar PlayerPrefs
