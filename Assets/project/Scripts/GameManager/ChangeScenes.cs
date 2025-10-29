@@ -75,5 +75,11 @@ public class ChangeScenes : MonoBehaviour
         ThrowBubbles.sharedAvailableWords = null;
         SceneManager.LoadScene("CreditsScene");
     }
+
+    public void ExitGame()
+    {
+        ThrowBubbles.sharedAvailableWords = null;
+        Application.Quit();
+    }
 }
 
