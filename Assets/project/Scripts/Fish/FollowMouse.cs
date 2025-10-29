@@ -44,6 +44,16 @@ public class FollowMouse : MonoBehaviour
             hasInput = true;
         }
 
+        else if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Timer timer = GetComponent<Timer>();
+            timer.level1 = true;
+            timer.level2 = true;
+            timer.level3 = true;
+            timer.level4 = true;
+            timer.level5 = true;
+        }
+
         if (hasTarget)
         {
             Vector2 currentPos = transform.position;

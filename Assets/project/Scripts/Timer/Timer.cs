@@ -28,11 +28,11 @@ public class Timer : MonoBehaviour
     {
         if(category == WordCategory.Animales)
         {
-            timeRemaining = 90.0f;
+            timeRemaining = 45.0f;
         } else if(category == WordCategory.Cuina)
         {
             timeRemaining = 75.0f;
-        } else if(category==WordCategory.Casa || category == WordCategory.ColorsRoba)
+        } else if(category == WordCategory.Casa || category == WordCategory.ColorsRoba)
         {
             timeRemaining = 60.0f;
         } else if (category == WordCategory.Verbs)
