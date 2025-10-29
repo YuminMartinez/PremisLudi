@@ -19,6 +19,7 @@ public class ThrowBubbles : MonoBehaviour
     static void ResetStatics() => sharedAvailableWords = null;
     void Start()
     {
+        // sharedAvailableWords = null;
         if (wordPool == null) { Debug.LogError("WordPool no asignado", this); return; }
         if (bubblePrefab == null) { Debug.LogError("BubblePrefab no asignado", this); return; }
 
