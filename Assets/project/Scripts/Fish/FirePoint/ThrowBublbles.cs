@@ -10,25 +10,19 @@ public class ThrowBubbles : MonoBehaviour
     public WordPool wordPool;
     public WordCategory currentCategory;
     [SerializeField] private float fireDelay = 2f;
-    [SerializeField]  private float wait = 6f; // dura 4 segundos visible
-    // Lista compartida por TODOS los FirePoints
+    [SerializeField]  private float wait = 6f; // Visible for 4 seconds 
+
+    // Shared list between all firepoints in the scene
     public static List<WordData2> sharedAvailableWords;
 
-    // (Opcional pero útil si tienes Enter Play Mode sin Reload Domain)
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetStatics() => sharedAvailableWords = null;
-
-
-
-  
     void Start()
     {
-       
-
         if (wordPool == null) { Debug.LogError("WordPool no asignado", this); return; }
         if (bubblePrefab == null) { Debug.LogError("BubblePrefab no asignado", this); return; }
 
-        // Solo el primero inicializa la lista compartida
+        // Only first firepoint initializes list
         if (sharedAvailableWords == null || sharedAvailableWords.Count == 0)
         {
             sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));
@@ -50,31 +44,26 @@ public class ThrowBubbles : MonoBehaviour
             Debug.Log(" Sin palabras disponibles.");
             return;
         }
-
-        // Elegir y retirar una palabra para no repetir
         int randomIndex = Random.Range(0, sharedAvailableWords.Count);
         WordData2 selectedWord = sharedAvailableWords[randomIndex];
         sharedAvailableWords.RemoveAt(randomIndex);
 
-        // Instanciar la burbuja
+        // Intantiate bubble prefab
         GameObject bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
 
         var cd = bubble.GetComponent<CollisionDetection>();
         if (cd != null) cd.SetWord(selectedWord);
         else Debug.LogError("El prefab de burbuja no tiene CollisionDetection.", bubble);
 
-        // Mostrar la palabra justo al instanciar
+        // Show word when instantiating
         TMP_Text label = bubble.GetComponentInChildren<TMP_Text>();
         if (label != null)
         {
             label.text = selectedWord.Text;
-            // opcional: color por correcta/incorrecta
-            // label.color = selectedWord.IsCorrect ? Color.green : Color.red;
         }
 
         Debug.Log($"💬 {name} lanzó '{selectedWord.Text}' ({selectedWord.Category})");
 
-        // (Opcional) Reiniciar cuando se agoten
         if (sharedAvailableWords.Count == 0)
         {
             sharedAvailableWords = new List<WordData2>(wordPool.GetWordsByCategory(currentCategory));

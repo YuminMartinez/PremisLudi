@@ -6,15 +6,13 @@ public class Timer : MonoBehaviour
 {
     [Header("Timer Settings")]
     [SerializeField] private float startDelay = 4f;
-    private float timeRemaining; // seconds
+    private float timeRemaining;
     public bool timerIsRunning = false;
     [SerializeField] private WordCategory category;
 
-
     [Header("Gameplay Data")]
-    [SerializeField] private FishScore fishScore;  // arrástralo en el inspector (opcional)
-    [SerializeField] private int wordsLearned = 0; // se irá incrementando durante la partida
-
+    [SerializeField] private FishScore fishScore;
+    [SerializeField] private int wordsLearned = 0;
 
     [Header("Level complete")]
     public bool level1 = false;
@@ -23,9 +21,8 @@ public class Timer : MonoBehaviour
     public bool level4 = false;
     public bool level5 = false;
 
-
     [Header("UI Reference")]
-    [SerializeField] TMP_Text timerText; // Assign your TMP text here in Inspector
+    [SerializeField] TMP_Text timerText;
 
     private void Awake()
     {
@@ -57,9 +54,9 @@ public class Timer : MonoBehaviour
     }
     private IEnumerator StartTimerWithDelay()
     {
-        Debug.Log($"⏳ Esperando {startDelay} segundos antes de iniciar el timer...");
+        Debug.Log($"Esperando {startDelay} segundos antes de iniciar el timer...");
         yield return new WaitForSecondsRealtime(startDelay);
-        Debug.Log("▶️ Timer iniciado!");
+        Debug.Log("Timer iniciado!");
         timerIsRunning = true;
     }
     void Update()
@@ -77,7 +74,7 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-                // Optional: call something when timer ends
+                // Call something when timer ends
                 OnTimerEnd();
             }
         }
@@ -96,16 +93,12 @@ public class Timer : MonoBehaviour
 
     void OnTimerEnd()
     {
-        // Guarda los datos en PlayerPrefs
         PlayerPrefs.SetInt("FinalScore", FindObjectOfType<FishScore>().Score);
         PlayerPrefs.SetInt("WordsLearned", wordsLearned);
 
-        PlayerPrefs.Save(); // Guarda los datos en disco
+        PlayerPrefs.Save();
 
-        // You can trigger game over or any other action here
         SceneManager.LoadScene("ScoreScreen");
-        // Example: FindObjectOfType<GameManager>().GameOver();
-
 
         if (category == WordCategory.Animales)
         {
@@ -129,26 +122,18 @@ public class Timer : MonoBehaviour
         }
 
         PlayerPrefs.Save();
-
-
     }
 
-
-
-
-    // Suma 1 (o la cantidad que pases)
     public void IncrementWordsLearned(int amount = 1)
     {
         wordsLearned += amount;
     }
 
-    // Fija el valor directamente
     public void SetWordsLearned(int value)
     {
         wordsLearned = Mathf.Max(0, value);
     }
 
-    // Leer el valor actual (por si lo necesitas)
     public int GetWordsLearned()
     {
         return wordsLearned;

@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; // o usa UnityEngine.UI si no usas TextMeshPro
+using TMPro;
 
 public class FinalScreenController : MonoBehaviour
 {
     [SerializeField] private TMP_Text paraulesText;
     [SerializeField] private TMP_Text puntuacioText;
-
-
 
     void Start()
     {

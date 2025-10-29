@@ -18,10 +18,10 @@ public class BubbleMovementLeft : MonoBehaviour
 
     void Update()
     {
-        // Movimiento horizontal constante
+        // Horizontal movement
         transform.position += Vector3.left * horizontalSpeed * Time.deltaTime;
 
-        // Oscilación vertical tipo zigzag
+        // Sinus vertical kinda oscillation
         transform.position = new Vector3(
             transform.position.x,
             startPos.y + Mathf.Sin(Time.time * verticalFrequency) * verticalAmplitude,

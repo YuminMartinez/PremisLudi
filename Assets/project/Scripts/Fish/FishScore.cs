@@ -6,21 +6,18 @@ using UnityEngine.UI;
 public class FishScore : MonoBehaviour
 {
     [Header("Configuración de Puntos")]
-    [SerializeField] private int correctWordsPoints = 1;     // puntos normales
-    [SerializeField] private int incorrectWordsPoints = -1;  // puntos por error
-    [SerializeField] private int firstComboPoint = 5;        // puntos al llegar a combo 3
+    [SerializeField] private int correctWordsPoints = 10; // Points for correct answer
+    [SerializeField] private int incorrectWordsPoints = -5; // Points for incorrect answer
+    [SerializeField] private int firstComboPoint = 5; // Points added when first combo is reached (3 continued correct answers)
 
-
-
-
-    [SerializeField] private Image foc;
+    [SerializeField] private Image foc; // Fire used to show combo and streak
     private int combo = 0;
     private int points = 0;
     private int previousPoints = 0;
 
     public int Score { get; private set; }
 
-    // Evento: (nuevoScore, delta)
+    // Event: (nuevoScore, delta)
     public event Action<int, int> OnScoreChanged;
 
 
@@ -39,20 +36,20 @@ public class FishScore : MonoBehaviour
 
             if (combo < 3)
             {
-                // combo 1 y 2
+                // First and second combo done
                 points = correctWordsPoints;
                 foc.gameObject.SetActive(false);
             }
             else if (combo == 3)
             {
-                // primer combo de 3
+                // First combo of 3
                 previousPoints = firstComboPoint;
                 points = previousPoints;
                 foc.gameObject.SetActive(true);
             }
-            else // combo > 3
+            else // 
             {
-                // después del combo 3, +2 cada vez
+                // If combo > 3, adding +2 points everytime
                 previousPoints += 2;
                 points = previousPoints;
                 foc.gameObject.SetActive(true);
@@ -60,20 +57,18 @@ public class FishScore : MonoBehaviour
         }
         else
         {
-            // reinicia combo
+            // Combo is resetted when incorrect answer is selected
             combo = 0;
             previousPoints = 0;
             points = incorrectWordsPoints;
             foc.gameObject.SetActive(false);
         }
 
-        // 🔹 Aplica los puntos
         Score += points;
 
-        // 🔹 Dispara evento
+        // Event invoked
         OnScoreChanged?.Invoke(Score, points);
 
-        // 🔹 Mensajes de depuración
         Debug.Log($"Combo actual: {combo}");
         Debug.Log($"Pez: {(points >= 0 ? "+" : "")}{points} → total {Score}");
     }

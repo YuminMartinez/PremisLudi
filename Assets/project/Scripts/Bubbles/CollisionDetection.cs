@@ -4,12 +4,11 @@ public class CollisionDetection : MonoBehaviour
 {
     [SerializeField] private WordData2 wordData;
 
-    // 👇 Añade estas dos referencias en el inspector
-    [SerializeField] private GameObject floatingDeltaPrefab; // Prefab con el script FloatingDelta
-    [SerializeField] private Transform canvasTransform;      // Canvas (para UI Text)
+    [SerializeField] private GameObject floatingDeltaPrefab;
+    [SerializeField] private Transform canvasTransform;
 
-    [SerializeField] private GameObject correctParticles;    // Prefab de partículas para respuestas correctas
-    [SerializeField] private GameObject incorrectParticles;  // Prefab de partículas para respuestas incorrectas
+    [SerializeField] private GameObject correctParticles;
+    [SerializeField] private GameObject incorrectParticles;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,35 +17,35 @@ public class CollisionDetection : MonoBehaviour
         FishScore fishScore = other.GetComponent<FishScore>();
         if (fishScore == null) return;
 
-        // Ver si la palabra es correcta
+        // Assign bool value for checking answer later
         bool correct = (wordData != null) && wordData.IsCorrect;
 
-        // Asignar puntos según el resultado
+        // Assign value depending on answer
         int delta = correct ? +10 : -5;
         fishScore.AddPoints(correct);
 
         if (correct)
         {
-            AudioManager.Instance.PlayCorrectClip(); // Reproduce sonido de respuesta correcta
+            AudioManager.Instance.PlayCorrectClip(); // Correct answer audio clip
             if (correctParticles != null)
-                Instantiate(correctParticles, transform.position, Quaternion.identity); // Instancia partículas correctas
+                Instantiate(correctParticles, transform.position, Quaternion.identity); // Instantiate correct particles
         }
         else
         {
-            AudioManager.Instance.PlayIncorrectClip(); // Reproduce sonido de respuesta incorrecta
+            AudioManager.Instance.PlayIncorrectClip(); // Incorrect answer audio clip
             if (incorrectParticles != null)
-                Instantiate(incorrectParticles, transform.position, Quaternion.identity); // Instancia partículas incorrectas
+                Instantiate(incorrectParticles, transform.position, Quaternion.identity); // Instantiate incorrect particles
         }
 
 
-        // 👇 Instanciar y mostrar el texto flotante
+        // Instantiate string message
         if (floatingDeltaPrefab != null && canvasTransform != null)
         {
             var instance = Instantiate(floatingDeltaPrefab, canvasTransform);
             instance.GetComponent<FloatingDelta>().Show(delta);
         }
 
-        // Destruir el objeto con el que colisionó
+        // Destroy bubble
         Destroy(gameObject);
     }
 

@@ -8,8 +8,8 @@ public class ScoreUI : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     [Header("Floating Text Feedback")]
-    public FloatingDelta floatingPrefab;       // arrastra el prefab aquí
-    public RectTransform floatingRoot;         // un contenedor dentro del Canvas
+    public FloatingDelta floatingPrefab;
+    public RectTransform floatingRoot;
 
     [Header("Formato")]
     public string prefix = "Score: ";
@@ -39,7 +39,7 @@ public class ScoreUI : MonoBehaviour
         if (scoreText != null)
             scoreText.text = $"{prefix}{newScore}";
 
-        // Crear el texto flotante
+        // Floating text
         if (delta != 0 && floatingPrefab != null && floatingRoot != null)
         {
             FloatingDelta fx = Instantiate(floatingPrefab, floatingRoot);

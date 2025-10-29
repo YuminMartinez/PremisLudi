@@ -20,7 +20,7 @@ public class FollowMouse : MonoBehaviour
     {
         bool hasInput = false;
 
-        // --- Movimiento con toque (móvil) ---
+        // Movement input with touch (fingertips)
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -34,7 +34,7 @@ public class FollowMouse : MonoBehaviour
                 hasInput = true;
             }
         }
-        // --- Movimiento con ratón (PC) ---
+        // Movement input with mouse click
         else if (Input.GetMouseButton(0))
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -49,17 +49,18 @@ public class FollowMouse : MonoBehaviour
             Vector2 currentPos = transform.position;
             Vector2 direction = (targetPos - currentPos);
 
-            // si ya llegó (o muy cerca)
+            // Checking if direction is close to position
             if (direction.magnitude < stopDistance)
             {
+                // Keeps last direction to be in idle
                 hasTarget = false;
-                return; // se queda quieto mirando al último lado
+                return;
             }
 
             direction.Normalize();
             transform.position = currentPos + direction * speed * Time.deltaTime;
 
-            // Flip solo cuando se mueve en dirección contraria a su mirada actual
+            // Checking direction and doing flip
             if (direction.x < 0 && isFacingRight)
                 Flip();
             else if (direction.x > 0 && !isFacingRight)
